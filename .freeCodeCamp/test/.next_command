@@ -120,3 +120,8 @@ tail -20 /workspace/project/.freeCodeCamp/test/.next_command
 echo hello PostgreSQL
 psql --username=freeCodeCamp --dbname=postgres
 psql --username=freecodecamp --dbname=postgres
+sudo service postgresql start
+echo hello postgreSQL
+CREATE DATABASE first_database
+sudo service postgresql start
+psql --username=postgres --dbname=postgres -c "CREATE DATABASE first_database;"
