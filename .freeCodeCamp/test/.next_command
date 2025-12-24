@@ -307,3 +307,5 @@ psql --username=freecodecamp --dbname=second_database
 __vsc_prompt_cmd_original
 psql --username=freecodecamp --dbname=first_database -c "ALTER DATABASE first_database RENAME TO mario_database;"
 psql --username=postgres --dbname=postgres -c "ALTER DATABASE first_database RENAME TO mario_database;"
+\l
+psql --username=freecodecamp --dbname=second_database -c "\l"
