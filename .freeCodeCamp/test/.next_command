@@ -125,3 +125,4 @@ echo hello postgreSQL
 CREATE DATABASE first_database
 sudo service postgresql start
 psql --username=postgres --dbname=postgres -c "CREATE DATABASE first_database;"
+psql --username=postgres --dbname=postgres -c "\l"
