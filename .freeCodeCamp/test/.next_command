@@ -312,3 +312,4 @@ psql --username=freecodecamp --dbname=second_database -c "\l"
 psql --username=postgres --dbname=postgres -c "ALTER DATABASE mario_database OWNER TO freecodecamp;"
 psql --username=freecodecamp --dbname=second_database -c "\l"
 psql --username=freecodecamp --dbname=mario_database
+psql --username=freecodecamp --dbname=mario_database
