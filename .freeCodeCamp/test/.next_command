@@ -399,3 +399,6 @@ sudo service postgresql start
 psql --username=freecodecamp --dbname=mario_database -c "UPDATE characters SET name='Mario' WHERE character_id=1;"
 psql --username=freecodecamp --dbname=mario_database -c "SELECT * FROM characters ORDER BY character_id;"
 psql --username=freecodecamp --dbname=mario_database -c "UPDATE characters SET name='Mario' WHERE character_id=2;"
+psql --username=freecodecamp --dbname=mario_database -c "SELECT * FROM characters WHERE name='Mario' OR character_id=2;"
+SELECT * FROM character
+psql --username=freecodecamp --dbname=mario_database
