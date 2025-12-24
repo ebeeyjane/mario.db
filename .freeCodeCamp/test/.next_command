@@ -402,3 +402,91 @@ psql --username=freecodecamp --dbname=mario_database -c "UPDATE characters SET n
 psql --username=freecodecamp --dbname=mario_database -c "SELECT * FROM characters WHERE name='Mario' OR character_id=2;"
 SELECT * FROM character
 psql --username=freecodecamp --dbname=mario_database
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[ -z "${VSCODE_PYTHON_AUTOACTIVATE_GUARD:-}" ]
+export VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+[ -n "${VSCODE_PYTHON_BASH_ACTIVATE:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "${HISTCONTROL:-}" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[ -n "$STARSHIP_SESSION_KEY" ]
+[ -n "$POSH_SESSION_ID" ]
+builtin printf '\e]633;P;HasRichCommandDetection=True\a'
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+psql --username=freecodecamp --dbname=mario_database
+psql --username=freecodecamp --dbname=mario_database -c "UPDATE characters SET favorite_color='Blue' WHERE character_id=4;"
+psql --username=freecodecamp --dbname=mario_database -c "SELECT * FROM characters WHERE character_id=4;"
+psql --username=freecodecamp --dbname=mario_database -c "UPDATE character SET favorite_color='Blue' WHERE character_id=4;"
+psql --username=freecodecamp --dbname=mario_database -c "\dt"
+psql --username=freecodecamp --dbname=mario_database -c "SELECT * FROM characters WHERE character_id=4;"
+psql --username=freecodecamp --dbname=mario_database -c "SELECT * FROM characters;"
+psql --username=freecodecamp --dbname=mario_database -c "DELETE FROM characters;"
+psql --username=freecodecamp --dbname=mario_database -c "INSERT INTO characters(character_id, name, homeland, favorite_color) VALUES (1, 'Mario', 'Mushroom Kingdom', 'Red'), (2, 'Luigi', 'Mushroom Kingdom', 'Green'), (3, 'Peach', 'Mushroom Kingdom', 'Pink'), (4, 'Toad', 'Mushroom Kingdom', 'Red'), (5, 'Bowser', 'Mushroom Kingdom', 'Green'), (6, 'Daisy', 'Sarasaland', 'Orange'), (7, 'Yoshi', 'Dinosaur Land', 'Green');"
+psql --username=freecodecamp --dbname=mario_database -c "SELECT setval('characters_character_id_seq', 7);"
+psql --username=freecodecamp --dbname=mario_database -c "SELECT * FROM characters ORDER BY character_id;"
+psql --username=freecodecamp -c "\l"
+psql --username=freecodecamp --dbname=postgres -c "\l"
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[ -z "${VSCODE_PYTHON_AUTOACTIVATE_GUARD:-}" ]
+export VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+[ -n "${VSCODE_PYTHON_BASH_ACTIVATE:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "${HISTCONTROL:-}" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[ -n "$STARSHIP_SESSION_KEY" ]
+[ -n "$POSH_SESSION_ID" ]
+builtin printf '\e]633;P;HasRichCommandDetection=True\a'
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+psql --username=freecodecamp --dbname=mario_database
